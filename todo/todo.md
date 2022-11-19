@@ -1,0 +1,16 @@
+# Todos
+- [X] Préparer le projet
+    - [X] ~~Préparer l'architecture et les tests~~
+    - [X] ~~Préparer le serveur~~
+    - [ ] Préparer les fichiers static
+    - [X] Créer un repo github pour le projet
+- [ ] Ajouter la logique du jeu
+    - [ ] Ajouter les dés
+    - [ ] Implémenter l'aléatoire
+    - [ ] Implémenter le freeze de dés
+    - [ ] Implémenter les essais
+    - [ ] Implémenter le score
+- [ ] Ajuster la partie graphique
+    - [ ] Faire le html css de base
+    - [ ] Implémenter une animation de dé
+- [ ] Ajouter les user-stories

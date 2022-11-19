@@ -16,10 +16,11 @@ app.get('/', (req, res) => {
 
 app.get('/roll/:unfrozen', (req, res) => {
     var unfrozenDices = parseInt(req.params.unfrozen);
-    var dices = discus.play(unfrozenDices);
+    var dices = discus.roll(unfrozenDices);
     res.json({
-        values: dices,
-        disableBtn: true,
+        values: dices.dices,
+        evenNumbers: dices.evenNb,
+        disableBtn: dices.dices != [],
     });
 })
 
@@ -29,6 +30,11 @@ app.get('/freeze', (req, res) => {
     var value = req.query.value;
     var respObject = discus.freeze({id: id, value: value, class: mClass});
     res.json(respObject);
+})
+
+app.get('/finish', (req, res) => {
+    var respObj = discus.finish({attemptNb: req.query.attemptNb, values: req.query.values});
+    res.json(respObj);
 })
 
 // app.get('/chaine/:prenom', (req, res) => {

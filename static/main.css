@@ -15,3 +15,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+.frozen-dice {
+    color: blue;
+}

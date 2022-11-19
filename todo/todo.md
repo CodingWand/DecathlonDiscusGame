@@ -8,7 +8,7 @@
     - [X] ~~Implémenter l'aléatoire~~
     - [X] ~~Implémenter le jet de dés~~
     - [X] ~~Implémenter le freeze de dés~~
-    - [ ] Implémenter les essais
+    - [X] Implémenter les essais
     - [ ] Implémenter le score
 - [X] Mettre tous les calculs du jeu dans le back
     - [X] ~~le gèle de dé et le lancement de dé~~

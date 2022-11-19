@@ -8,7 +8,7 @@
     - [X] ~~Implémenter l'aléatoire~~
     - [X] ~~Implémenter le jet de dés~~
     - [X] ~~Implémenter le freeze de dés~~
-    - [X] Implémenter les essais
+    - [X] ~~Implémenter les essais~~
     - [ ] Implémenter le score
 - [X] Mettre tous les calculs du jeu dans le back
     - [X] ~~le gèle de dé et le lancement de dé~~
@@ -17,4 +17,7 @@
 - [ ] Ajuster la partie graphique
     - [ ] Finir le style
     - [ ] Implémenter une animation de dé
+    - [ ] Ajouter un modal qui annonce la fin du jeu, des essais et le score
 - [ ] Ajouter les user-stories
+- [ ] Bugs
+    - [ ] Corriger la fonction qui repasse tous les dés à "dice"

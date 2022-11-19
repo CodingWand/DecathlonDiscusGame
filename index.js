@@ -19,7 +19,7 @@ app.get('/roll/:unfrozen', (req, res) => {
     var dices = discus.roll(unfrozenDices);
     res.json({
         values: dices.dices,
-        evenNumbers: dices.evenNb,
+        endAttempt: dices.endAttempt,
         disableBtn: dices.dices != [],
     });
 })
@@ -33,7 +33,7 @@ app.get('/freeze', (req, res) => {
 })
 
 app.get('/finish', (req, res) => {
-    var respObj = discus.finish({attemptNb: req.query.attemptNb, values: req.query.values});
+    var respObj = discus.finish({attemptNb: req.query.attemptNb, values: req.query.values, lastScore: req.query.lastScore});
     res.json(respObj);
 })
 

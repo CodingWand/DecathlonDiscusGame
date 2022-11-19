@@ -16,7 +16,7 @@ function play(nb) {
         }
     }
 
-    return {dices: dices, evenNb: evenNumbers};
+    return {dices: dices, endAttempt: (evenNumbers === 0 || nb === 0)};
 }
 
 function freezeDice(dice) {
@@ -24,13 +24,19 @@ function freezeDice(dice) {
 }
 
 function finishAttempt(queryObj) {
-    nbAttempts = queryObj.attemptNb;
-    frozenDices = queryObj.values;
-    score = 0;
-    for(value in frozenDices) {
+    nbAttempts = parseInt(queryObj.attemptNb);
+    frozenDices = queryObj.values.split(',');
+    score = parseInt(queryObj.lastScore);
+    for(let i = 0; i < frozenDices.length; i++) {
+        value = frozenDices[i];
         score += parseInt(value);
     }
-    return {attemptNb: nbAttempts + 1, attemptScore: score, theEnd: nbAttempts > 3};
+    isLastAttempt = (nbAttempts === 3);
+    return {
+        attemptNb: isLastAttempt ? 1 : nbAttempts + 1,
+        score: score,
+        theEnd: isLastAttempt
+    };
 }
 
 module.exports = {

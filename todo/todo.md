@@ -1,12 +1,11 @@
 # Todos
-- [X] Préparer le projet
+- [X] ~~Préparer le projet~~
     - [X] ~~Préparer l'architecture et les tests~~
     - [X] ~~Préparer le serveur~~
-    - [X] Préparer les fichiers static
+    - [X] ~~Préparer les fichiers static~~
     - [X] ~~Créer un repo github pour le projet~~
-- [ ] Ajouter la logique du jeu
-    - [ ] Ajouter les dés
-    - [ ] Implémenter l'aléatoire
+- [X] Ajouter la logique du jeu
+    - [X] ~~Implémenter l'aléatoire~~
     - [ ] Implémenter le freeze de dés
     - [ ] Implémenter les essais
     - [ ] Implémenter le score

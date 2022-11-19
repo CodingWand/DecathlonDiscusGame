@@ -33,7 +33,7 @@ app.get('/freeze', (req, res) => {
 })
 
 app.get('/finish', (req, res) => {
-    var respObj = discus.finish({attemptNb: req.query.attemptNb, values: req.query.values, lastScore: req.query.lastScore});
+    var respObj = discus.finish({attemptNb: req.query.attemptNb, values: req.query.values});
     res.json(respObj);
 })
 

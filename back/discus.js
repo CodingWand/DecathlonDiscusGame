@@ -26,7 +26,7 @@ function freezeDice(dice) {
 function finishAttempt(queryObj) {
     nbAttempts = parseInt(queryObj.attemptNb);
     frozenDices = queryObj.values.split(',');
-    score = parseInt(queryObj.lastScore);
+    score = 0;
     for(let i = 0; i < frozenDices.length; i++) {
         value = frozenDices[i];
         score += parseInt(value);

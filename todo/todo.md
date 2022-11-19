@@ -9,10 +9,10 @@
     - [X] ~~Implémenter le jet de dés~~
     - [X] ~~Implémenter le freeze de dés~~
     - [X] ~~Implémenter les essais~~
-    - [X] Implémenter le score
+    - [X] ~~Implémenter le score~~
 - [X] Mettre tous les calculs du jeu dans le back
     - [X] ~~le gèle de dé et le lancement de dé~~
-    - [ ] la gestion des essais
+    - [X] ~~la gestion des essais~~
     - [ ] le score
 - [ ] Ajuster la partie graphique
     - [ ] Finir le style

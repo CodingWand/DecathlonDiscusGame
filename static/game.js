@@ -2,13 +2,13 @@ function unfreezeDices() {
     for(var i = 1; i < 6; i++) {
         dice = document.getElementById('dice' + i);
         dice.className = "dice";
+        dice.textContent = "";
     }
 }
 
 function endAttempt(score) {
     alert('Vous avez terminé votre essai avec un score de : ' + score);
     unfreezeDices();
-    document.querySelector("#rollButton").click();
     document.querySelector("#rollButton").disabled = false;
 }
 
@@ -35,11 +35,11 @@ document.querySelector("#finishButton").addEventListener("click", () => {
     }
 
     score = parseInt(document.querySelector("#scoreNb").textContent);
-    fetch("/finish?attemptNb=" + attemptNb.textContent + "&values=" + values + "&lastScore=" + score)
+    fetch("/finish?attemptNb=" + attemptNb.textContent + "&values=" + values)
         .then((response) => response.json())
         .then((data) => {
             attemptNb.textContent = data.attemptNb;
-            document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : data.score;
+            document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : Math.max(score, data.score);
 
             endAttempt(data.score);
     });

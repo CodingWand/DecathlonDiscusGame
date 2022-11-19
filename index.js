@@ -14,6 +14,23 @@ app.get('/', (req, res) => {
     res.redirect(301, '/static/index.html')
 })
 
+app.get('/roll/:unfrozen', (req, res) => {
+    var unfrozenDices = parseInt(req.params.unfrozen);
+    var dices = discus.play(unfrozenDices);
+    res.json({
+        values: dices,
+        disableBtn: true,
+    });
+})
+
+app.get('/freeze', (req, res) => {
+    var id = req.query.id;
+    var mClass = req.query.class;
+    var value = req.query.value;
+    var respObject = discus.freeze({id: id, value: value, class: mClass});
+    res.json(respObject);
+})
+
 // app.get('/chaine/:prenom', (req, res) => {
 //     console.log(req.params)
 //     res.end()

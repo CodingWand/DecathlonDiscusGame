@@ -2,16 +2,24 @@ function rollDice() {
     return Math.floor(Math.random() * 6) + 1;
 }
 
-function play() {
-    var dices = document.getElementsByClassName("dice");
-    for(let i = 0; i < dices.length; i++) {
-        dice = dices[i];
+function play(nb) {
+    var dices = [];
+    
+    for(let i = 0; i < nb; i++) {
         var value = rollDice();
-        dice.textContent = value;
+        var dice = value;
+        dices.push(dice);
     }
+
+    return dices;
 }
 
-function freezeDice(id) {
-    if(parseInt(id.textContent) % 2 === 0)
-        id.className = "frozen-dice";
+function freezeDice(dice) {
+    return {diceID: dice.id, freeze: ((parseInt(dice.value) % 2 === 0) && dice.class === "dice")}
+}
+
+module.exports = {
+    roll: rollDice,
+    play: play,
+    freeze: freezeDice,
 }

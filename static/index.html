@@ -2,9 +2,32 @@
 <html lang="fr-FR">
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="main.css"/>
         <title>Discus</title>
     </head>
     <body>
         <h1>Lancé de disques</h1>
+
+        <section class="info-section">
+            Jette les dés et gèle au moins un dé. Tu ne peux gelé que les dés de valeurs paires.<br/>
+            Tu as trois essais.<br/>
+            Tu peux terminer un essai quand tu veux et un essai s'arrête automatiquement lorsque 
+            tous les dés sont gelés.<br/>
+            Si après un essai tu ne peux geler aucun dé alors ton essai sera considéré comme invalide.
+            <div class="score">Score : <span id="scoreID"></span></div>
+        </section>
+        <section class="game-section">
+            <div class="dices-section">
+                <div class="dice" id="dice1"></div>
+                <div class="dice" id="dice2"></div>
+                <div class="dice" id="dice3"></div>
+                <div class="dice" id="dice4"></div>
+                <div class="dice" id="dice5"></div>
+            </div>
+            <div class="button-section">
+                <button>Roll</button>
+                <button>Finish</button>
+            </div>
+        </section>
     </body>
 </html>

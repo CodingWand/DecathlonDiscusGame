@@ -1,13 +1,11 @@
 function unfreezeDices() {
-    dices = document.getElementsByClassName('frozen-dice');
-    for(var i = 0; i < dices.length; i++) {
-        console.log(dices[i].id);
-        dices[i].className = "dice";
+    for(var i = 1; i < 6; i++) {
+        dice = document.getElementById('dice' + i);
+        dice.className = "dice";
     }
 }
 
-function endAttempt() {
-    score = document.querySelector("#scoreNb").textContent;
+function endAttempt(score) {
     alert('Vous avez terminé votre essai avec un score de : ' + score);
     unfreezeDices();
     document.querySelector("#rollButton").click();
@@ -43,7 +41,7 @@ document.querySelector("#finishButton").addEventListener("click", () => {
             attemptNb.textContent = data.attemptNb;
             document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : data.score;
 
-            endAttempt();
+            endAttempt(data.score);
     });
 })
 

@@ -12,5 +12,6 @@ function play() {
 }
 
 function freezeDice(id) {
-    id.className = "frozen-dice";
+    if(parseInt(id.textContent) % 2 === 0)
+        id.className = "frozen-dice";
 }

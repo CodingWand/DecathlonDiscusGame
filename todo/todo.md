@@ -4,13 +4,13 @@
     - [X] ~~Préparer le serveur~~
     - [X] ~~Préparer les fichiers static~~
     - [X] ~~Créer un repo github pour le projet~~
-- [X] Ajouter la logique du jeu
+- [X] ~~Ajouter la logique du jeu~~
     - [X] ~~Implémenter l'aléatoire~~
     - [X] ~~Implémenter le jet de dés~~
     - [X] ~~Implémenter le freeze de dés~~
     - [X] ~~Implémenter les essais~~
     - [X] ~~Implémenter le score~~
-- [X] Mettre tous les calculs du jeu dans le back
+- [X] ~~Mettre tous les calculs du jeu dans le back~~
     - [X] ~~le gèle de dé et le lancement de dé~~
     - [X] ~~la gestion des essais~~
     - [X] ~~le score~~

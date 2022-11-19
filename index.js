@@ -6,7 +6,7 @@ const app = express()
 const hostname = '127.0.0.1';
 const port = 3000;
 
-//const numerologie = require('./back/numerologie');
+const discus = require('./back/discus');
 
 app.use("/static", express.static(path.join(__dirname, '/static')))
 

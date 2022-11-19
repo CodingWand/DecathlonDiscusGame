@@ -6,10 +6,11 @@
     - [X] ~~Créer un repo github pour le projet~~
 - [X] Ajouter la logique du jeu
     - [X] ~~Implémenter l'aléatoire~~
+    - [X] ~~Implémenter le jet de dé~~
     - [ ] Implémenter le freeze de dés
     - [ ] Implémenter les essais
     - [ ] Implémenter le score
 - [ ] Ajuster la partie graphique
-    - [ ] Faire le html css de base
+    - [ ] Finir le style
     - [ ] Implémenter une animation de dé
 - [ ] Ajouter les user-stories

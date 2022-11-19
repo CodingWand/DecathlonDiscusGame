@@ -10,3 +10,8 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
+.dices-section {
+    display: flex;
+    flex-direction: row;
+}

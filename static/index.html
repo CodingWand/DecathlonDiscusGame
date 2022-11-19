@@ -25,9 +25,17 @@
                 <div class="dice" id="dice5"></div>
             </div>
             <div class="button-section">
-                <button>Roll</button>
+                <button id="rollButton">Roll</button>
                 <button>Finish</button>
             </div>
         </section>
+
+        <script src="../back/discus.js"></script>
+        <script>
+            document.querySelector("#rollButton").addEventListener("click", () => {
+                play();
+                event.preventDefault();
+            })
+        </script>
     </body>
 </html>

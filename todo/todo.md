@@ -6,8 +6,8 @@
     - [X] ~~Créer un repo github pour le projet~~
 - [X] Ajouter la logique du jeu
     - [X] ~~Implémenter l'aléatoire~~
-    - [X] ~~Implémenter le jet de dé~~
-    - [ ] Implémenter le freeze de dés
+    - [X] ~~Implémenter le jet de dés~~
+    - [X] ~~Implémenter le freeze de dés~~
     - [ ] Implémenter les essais
     - [ ] Implémenter le score
 - [ ] Ajuster la partie graphique

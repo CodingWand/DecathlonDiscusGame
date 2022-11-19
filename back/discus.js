@@ -11,3 +11,6 @@ function play() {
     }
 }
 
+function freezeDice(id) {
+    id.className = "frozen-dice";
+}

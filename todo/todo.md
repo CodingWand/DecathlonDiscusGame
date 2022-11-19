@@ -16,7 +16,11 @@
     - [ ] le score
 - [ ] Ajuster la partie graphique
     - [ ] Finir le style
-    - [ ] Implémenter une animation de dé
+        - [ ] Ajouter bootstrap
+        - [ ] Ajouter un visuel pour les dés
+    - [ ] Implémenter les animations
+        - [ ] Animations des titres
+        - [ ] Animations des dés
     - [ ] Ajouter un modal qui annonce la fin du jeu, des essais et le score
 - [ ] Ajouter les user-stories
 - [X] ~~Bugs~~

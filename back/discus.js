@@ -20,7 +20,7 @@ function play(nb) {
 }
 
 function freezeDice(dice) {
-    return {diceID: dice.id, freeze: ((parseInt(dice.value) % 2 === 0) && dice.class === "dice")}
+    return {diceID: dice.id, freeze: ((parseInt(dice.value) % 2 === 0) && dice.class === "dice col-3")}
 }
 
 function finishAttempt(queryObj) {

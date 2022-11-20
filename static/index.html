@@ -2,10 +2,11 @@
 <html lang="fr-FR">
     <head>
         <meta charset="utf-8" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css"/>
         <title>Discus</title>
     </head>
-    <body>
+    <body class="container">
         <h1>Lancé de disques</h1>
 
         <section class="info-section">
@@ -14,24 +15,26 @@
             Tu peux terminer un essai quand tu veux et un essai s'arrête automatiquement lorsque 
             tous les dés sont gelés.<br/>
             Si après un essai tu ne peux geler aucun dé alors ton essai sera considéré comme invalide.
-            <div class="score">Score : <span id="scoreNb">0</span></div>
+            <div class="score">Meilleur score : <span id="scoreNb">0</span></div>
             <div class="attempt">Essai n° <span id="attemptNb">1</span></div>
         </section>
 
         <section class="game-section">
-            <div id="dices-section">
-                <a class="dice" onclick="freezeDice(this)" id="dice1"></a>
-                <a class="dice" onclick="freezeDice(this)" id="dice2"></a>
-                <a class="dice" onclick="freezeDice(this)" id="dice3"></a>
-                <a class="dice" onclick="freezeDice(this)" id="dice4"></a>
-                <a class="dice" onclick="freezeDice(this)" id="dice5"></a>
+            <div id="dices-section" class="row">
+                <div class="dice col-3" onclick="freezeDice(this)" id="dice1"></div>
+                <div class="dice col-3" onclick="freezeDice(this)" id="dice2"></div>
+                <div class="dice col-3" onclick="freezeDice(this)" id="dice3"></div>
+                <div class="dice col-3" onclick="freezeDice(this)" id="dice4"></div>
+                <div class="dice col-3" onclick="freezeDice(this)" id="dice5"></div>
             </div>
-            <div class="button-section">
-                <button id="rollButton">Roll</button>
-                <button id="finishButton">Finish</button>
+            <div class="button-section row">
+                <button id="rollButton" class="col-md-6">Roll</button>
+                <button id="finishButton" class="col-md-6">Finish</button>
             </div>
         </section>
 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
         <script src="game.js"></script>
     </body>
 </html>

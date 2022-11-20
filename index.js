@@ -37,22 +37,6 @@ app.get('/finish', (req, res) => {
     res.json(respObj);
 })
 
-// app.get('/chaine/:prenom', (req, res) => {
-//     console.log(req.params)
-//     res.end()
-// })
-
-// app.get(encodeURI('/prénom'), (req, res) => {
-//     console.log(req.query)
-//     prenom = req.query["valeur"]
-//     chiffre = numerologie.chiffre(prenom)
-
-//     res.json({
-//         prénom: prenom,
-//         chiffre: chiffre,
-//     })
-// })
-
 app.use(function (req, res) {
     console.log("et c'est le 404 : " + req.url);
 

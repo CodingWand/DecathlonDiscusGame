@@ -14,10 +14,13 @@
     - [X] ~~le gèle de dé et le lancement de dé~~
     - [X] ~~la gestion des essais~~
     - [X] ~~le score~~
-- [ ] Ajuster la partie graphique
-    - [ ] Finir le style
-        - [ ] Ajouter bootstrap
-        - [ ] Ajouter un visuel pour les dés
+- [X] Ajuster la partie graphique
+    - [X] Finir le style
+        - [X] ~~Ajouter bootstrap~~
+        - [X] ~~Ajouter un visuel pour les dés~~
+        - [X] Styliser les boutons
+        - [ ] Changer la police
+        - [ ] Choisir de meilleures couleurs
     - [ ] Implémenter les animations
         - [ ] Animations des titres
         - [ ] Animations des dés

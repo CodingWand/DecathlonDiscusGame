@@ -7,15 +7,20 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .dices-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-.frozen-dice {
-    color: blue;
+.dice, .frozen-dice{
+    background-size: cover;
+    background-clip: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }

@@ -19,12 +19,12 @@
         - [X] ~~Ajouter bootstrap~~
         - [X] ~~Ajouter un visuel pour les dés~~
         - [X] ~~Styliser les boutons~~
-        - [ ] Changer la police
+        - [X] ~~Changer la police~~
         - [X] ~~Choisir de meilleures couleurs~~
     - [ ] Implémenter les animations
         - [ ] Animations des titres
         - [ ] Animations des dés
-    - [ ] Ajouter un modal qui annonce la fin du jeu, des essais et le score
+    - [X] ~~Ajouter un modal qui annonce la fin du jeu, des essais et le score~~
 - [ ] Ajouter les user-stories
 - [X] ~~Bugs~~
     - [X] ~~Corriger la fonction qui repasse tous les dés à "dice"~~

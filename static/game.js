@@ -20,8 +20,15 @@ function freezeDice(id) {
         });
 }
 
-function endAttempt(score) {
-    alert('Vous avez terminé votre essai avec un score de : ' + score);
+function endAttempt(score, isTheEnd) {
+    if(isTheEnd) {
+        document.querySelector("#finalScore").textContent = score;
+        document.querySelector('#endModalTrigger').click();
+    } else {
+        document.querySelector("#attemptScore").textContent = score;
+        document.querySelector('#attemptModalTrigger').click();
+    }
+
     unfreezeDices();
     document.querySelector("#rollButton").disabled = false;
 }
@@ -63,6 +70,11 @@ document.querySelector("#finishButton").addEventListener("click", () => {
             attemptNb.textContent = data.attemptNb;
             document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : Math.max(score, data.score);
 
-            endAttempt(data.score == null ? 0 : data.score);
+            endAttempt(data.score == null ? score : Math.max(score, data.score), data.theEnd);
     });
+})
+
+document.querySelector("#replay").addEventListener("click", () => {
+    document.querySelector("#closeEndModal").click();
+    document.querySelector("#rollButton").click();
 })

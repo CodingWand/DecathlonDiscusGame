@@ -9,6 +9,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#GameTitle {
+    font-size: 60px;
+}
+
+.score, .attempt {
+    font-weight: bold;
 }
 
 button {
@@ -19,10 +32,8 @@ button {
     color: white;
 }
 
-.dices-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#dices-section {
+    margin: 50px 0px;
 }
 
 .button-section {
@@ -60,4 +71,8 @@ button {
 
 #finishButton:hover {
     box-shadow: 6px 6px 6px #aa3434aa;
+}
+
+#endModalTrigger, #attemptModalTrigger {
+    display: none;
 }

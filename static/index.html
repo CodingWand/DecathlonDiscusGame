@@ -3,13 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css"/>
         <title>Discus</title>
     </head>
     <body class="container">
-        <h1>Lancé de disques</h1>
+        <h1 id="GameTitle">Lancé de disques</h1>
 
         <section class="info-section">
+            <!-- <h2>Règles :</h2><br/> -->
             Jette les dés et gèle au moins un dé. Tu ne peux gelé que les dés de valeurs paires.<br/>
             Tu as trois essais.<br/>
             Tu peux terminer un essai quand tu veux et un essai s'arrête automatiquement lorsque 
@@ -32,6 +36,53 @@
                 <button id="finishButton" class="col-md-6">Finish</button>
             </div>
         </section>
+
+        <!-- Button trigger attempt modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#attemptModal" id="attemptModalTrigger">
+            Launch attempt modal
+        </button>
+        
+        <!-- Attempt Modal -->
+        <div class="modal fade" id="attemptModal" tabindex="-1" aria-labelledby="attemptModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="attemptModalLabel">Essai terminé</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Tu termines cet essai avec un score de <b id="attemptScore">0</b> et tu passes au suivant !
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger end modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#endModal" id="endModalTrigger">
+            Launch end modal
+        </button>
+        
+        <!-- End Modal -->
+        <div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="endModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="endModalLabel">Fin</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Tu as terminé la partie avec un score de <b id="finalScore">0</b> !
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeEndModal">Fermer</button>
+                        <button type="button" class="btn btn-primary" id="replay">Rejouer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

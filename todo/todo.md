@@ -18,9 +18,9 @@
     - [X] Finir le style
         - [X] ~~Ajouter bootstrap~~
         - [X] ~~Ajouter un visuel pour les dés~~
-        - [X] Styliser les boutons
+        - [X] ~~Styliser les boutons~~
         - [ ] Changer la police
-        - [ ] Choisir de meilleures couleurs
+        - [X] ~~Choisir de meilleures couleurs~~
     - [ ] Implémenter les animations
         - [ ] Animations des titres
         - [ ] Animations des dés

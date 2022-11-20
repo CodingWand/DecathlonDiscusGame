@@ -63,6 +63,6 @@ document.querySelector("#finishButton").addEventListener("click", () => {
             attemptNb.textContent = data.attemptNb;
             document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : Math.max(score, data.score);
 
-            endAttempt(data.score);
+            endAttempt(data.score == null ? 0 : data.score);
     });
 })

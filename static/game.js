@@ -68,7 +68,7 @@ document.querySelector("#finishButton").addEventListener("click", () => {
         .then((response) => response.json())
         .then((data) => {
             attemptNb.textContent = data.attemptNb;
-            document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : Math.max(score, data.score);
+            document.querySelector("#scoreNb").textContent = data.theEnd ? 0 : Math.max(score, data.score)
 
             endAttempt(data.score == null ? score : Math.max(score, data.score), data.theEnd);
     });

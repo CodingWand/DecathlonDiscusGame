@@ -21,10 +21,11 @@
         - [X] ~~Styliser les boutons~~
         - [X] ~~Changer la police~~
         - [X] ~~Choisir de meilleures couleurs~~
-    - [ ] Implémenter les animations
+    - [X] Implémenter les animations
         - [ ] Animations des titres
-        - [ ] Animations des dés
+        - [X] Animations des dés
     - [X] ~~Ajouter un modal qui annonce la fin du jeu, des essais et le score~~
+    - [ ] Ajouter un modal qui contient les règles du jeu
 - [ ] Ajouter les user-stories
 - [X] ~~Bugs~~
     - [X] ~~Corriger la fonction qui repasse tous les dés à "dice"~~

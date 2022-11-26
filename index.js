@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = process.env.PORT;
 
 const discus = require('./back/discus');
 
@@ -47,5 +47,5 @@ app.use(function (req, res) {
 
 })
 
-app.listen(port, hostname);
+app.listen(port || 3000, hostname);
 console.log(`Server running at http://${hostname}:${port}/`);
